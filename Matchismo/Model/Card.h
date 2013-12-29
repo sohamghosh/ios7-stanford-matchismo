@@ -10,4 +10,13 @@
 
 @interface Card : NSObject
 
+@property (nonatomic) unsigned rank;
+@property (strong, nonatomic) NSString *suit;
+
++ (NSArray *) validSuits;
+
++ (NSUInteger) maxRank;
+
+- (NSString *) contents;
+
 @end
